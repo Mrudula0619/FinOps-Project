@@ -1,0 +1,39 @@
+cat << 'EOF' > README.md
+# DataHub Quickstart & Ingestion Setup
+
+Local DataHub deployment setup and metadata ingestion using Python 3.11 and Docker.
+
+## Prerequisites
+
+- **Docker Desktop** running locally
+- **Python 3.11** installed via Homebrew (`brew install python@3.11`)
+- **acryl-datahub CLI** installed via `pipx` using Python 3.11
+
+## Quickstart Setup
+
+1. **Install DataHub CLI:**
+   ```bash
+   pipx install --python $(brew --prefix python@3.11)/bin/python3.11 acryl-datahub
+---
+
+### Step 2: Create a new repo on GitHub
+
+1. Open [GitHub New Repository](https://github.com/new).
+2. Enter a repository name (e.g., `datahub-quickstart`).
+3. Leave **"Add a README file" UNCHECKED** (since we created one above).
+4. Click **Create repository**.
+
+---
+
+### Step 3: Initialize Git and push
+
+In your terminal, run the following (replace `YOUR-USERNAME` and `YOUR-REPOSITORY-NAME` with your actual GitHub info):
+
+```bash
+git init
+git add .
+git commit -m "Initial commit: DataHub local quickstart setup"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+git push -u origin main
+
