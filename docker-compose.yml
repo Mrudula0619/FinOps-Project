@@ -1,4 +1,4 @@
-# This file is generated as part of build process. If any build changes cause this file to be modified, please check in the generated file
+
 name: datahub
 services:
   datahub-actions-quickstart:
