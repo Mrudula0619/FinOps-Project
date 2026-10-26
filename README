@@ -1,7 +1,8 @@
-cat << 'EOF' > README.md
-# DataHub Quickstart & Ingestion Setup
+# FinOps Project: DataHub Metadata Setup
 
-Local DataHub deployment setup and metadata ingestion using Python 3.11 and Docker.
+[TODO: one or two sentences on what this project does and why. For example: what data you cataloged (cloud cost data? billing exports?), and what question it helps answer.]
+
+Local DataHub deployment and metadata ingestion using Python 3.11 and Docker.
 
 ## Prerequisites
 
@@ -9,31 +10,38 @@ Local DataHub deployment setup and metadata ingestion using Python 3.11 and Dock
 - **Python 3.11** installed via Homebrew (`brew install python@3.11`)
 - **acryl-datahub CLI** installed via `pipx` using Python 3.11
 
-## Quickstart Setup
+## Setup
 
-1. **Install DataHub CLI:**
+1. **Install the DataHub CLI:**
+
    ```bash
    pipx install --python $(brew --prefix python@3.11)/bin/python3.11 acryl-datahub
----
+   ```
 
-### Step 2: Create a new repo on GitHub
+2. **Start DataHub locally:**
 
-1. Open [GitHub New Repository](https://github.com/new).
-2. Enter a repository name (e.g., `datahub-quickstart`).
-3. Leave **"Add a README file" UNCHECKED** (since we created one above).
-4. Click **Create repository**.
+   ```bash
+   datahub docker quickstart
+   ```
 
----
+3. **Ingest metadata:**
 
-### Step 3: Initialize Git and push
+   ```bash
+   # [TODO: your real recipe file name]
+   datahub ingest -c recipe.yml
+   ```
 
-In your terminal, run the following (replace `YOUR-USERNAME` and `YOUR-REPOSITORY-NAME` with your actual GitHub info):
+## What gets ingested
 
-```bash
-git init
-git add .
-git commit -m "Initial commit: DataHub local quickstart setup"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
-git push -u origin main
+[TODO: data source(s), what datasets or tables appear in DataHub, and anything you added (tags, owners, descriptions, lineage).]
+
+## Results
+
+[TODO: a screenshot of the DataHub UI showing your datasets, plus 2-3 sentences on what a user can find or learn from it.]
+
+## Project structure
+
+```
+# [TODO: list your main files, for example recipe.yml and any scripts or sample data]
+```
 
