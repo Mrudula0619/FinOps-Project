@@ -1,6 +1,5 @@
 # FinOps Project: DataHub Metadata Setup
 
-[TODO: one or two sentences on what this project does and why. For example: what data you cataloged (cloud cost data? billing exports?), and what question it helps answer.]
 
 Local DataHub deployment and metadata ingestion using Python 3.11 and Docker.
 
@@ -27,21 +26,18 @@ Local DataHub deployment and metadata ingestion using Python 3.11 and Docker.
 3. **Ingest metadata:**
 
    ```bash
-   # [TODO: your real recipe file name]
    datahub ingest -c recipe.yml
    ```
 
 ## What gets ingested
 
-[TODO: data source(s), what datasets or tables appear in DataHub, and anything you added (tags, owners, descriptions, lineage).]
 
 ## Results
 
-[TODO: a screenshot of the DataHub UI showing your datasets, plus 2-3 sentences on what a user can find or learn from it.]
+
 
 ## Project structure
 
-```
-# [TODO: list your main files, for example recipe.yml and any scripts or sample data]
-```
+
+
 
